@@ -1,0 +1,19 @@
+{
+  "name": "@pal/trpc-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/server": "^10.45.2",
+    "cookie": "^1.0.2",
+    "mongoose": "^8.7.2",
+    "uuid": "^11.0.3",
+    "@pal/db": "workspace:*",
+    "@pal/logger": "workspace:*"
+  }
+}

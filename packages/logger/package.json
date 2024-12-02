@@ -1,0 +1,10 @@
+{
+  "name": "@pal/logger",
+  "version": "0.0.1",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "dependencies": {
+    "pino": "^8.14.0",
+    "pino-pretty": "^9.1.1"
+  }
+}

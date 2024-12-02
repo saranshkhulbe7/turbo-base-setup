@@ -1,0 +1,40 @@
+{
+  "name": "@pal/server",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "^1.1.11",
+    "@types/jsonwebtoken": "^9.0.7"
+  },
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "dev:test": "cp envs/.env.test .env && bun run --hot src/index.ts",
+    "dev:prod": "cp envs/.env.prod .env && bun run --hot src/index.ts",
+    "start:test": "cp envs/.env.test .env && bun run src/index.ts",
+    "start:prod": "cp envs/.env.prod .env && bun run src/index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@hono/prometheus": "^1.0.1",
+    "@hono/trpc-server": "^0.3.2",
+    "@hono/zod-validator": "^0.4.1",
+    "@pal/trpc-server": "workspace:*",
+    "@types/cookie-session": "^2.0.49",
+    "@types/nodemailer": "^6.4.16",
+    "@types/ua-parser-js": "^0.7.39",
+    "cookie-session": "^2.1.0",
+    "dayjs": "^1.11.13",
+    "hono": "^4.6.5",
+    "hono-rate-limiter": "^0.4.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.2",
+    "nodemailer": "^6.9.16",
+    "ua-parser-js": "^1.0.39",
+    "zod": "^3.23.8",
+    "zod-validation-error": "^3.4.0"
+  }
+}

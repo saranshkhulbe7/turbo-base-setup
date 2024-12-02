@@ -1,0 +1,10 @@
+{
+  "extends": "../typescript-config/base.json", // Extending from the common config
+  "compilerOptions": {
+    "baseUrl": ".", // Base URL for the module resolution
+    "paths": {
+      "@trpc-server/*": ["./*"] // Adjust paths to match your directory structure
+    },
+    "module": "NodeNext"
+  }
+}
